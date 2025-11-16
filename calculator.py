@@ -41,7 +41,5 @@ def logarithm(a, b):
     elif a < 0 or b < 0:
         raise ValueError("outside domain")
 
-
-
 def exponent(a, b):
     return a**b
