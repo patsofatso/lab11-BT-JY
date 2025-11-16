@@ -12,7 +12,7 @@ One function per operation, in order.
 # First example
 import math
 
-<<<<<<< HEAD
+# <<<<<<< HEAD
 def square_root(a):
     if a < 0:
         raise ValueError("Cannot take square root of a negative number")
@@ -23,7 +23,7 @@ def hypotenuse(a, b):
     return math.hypot(a, b)
 
 def add(a, b):
->>>>>>> ba688b471595ca1b590041d08438c36e7f727e2b
+# >>>>>>> ba688b471595ca1b590041d08438c36e7f727e2b
     return a + b
 
 def subtract(a, b):
@@ -38,10 +38,10 @@ def divide(a, b):
     return b / a
 
 def logarithm(a, b):
-    if a == 0:
-        raise ValueError("log 0 is undefined")
-    elif a < 0:
-        raise ValueError("log of a negative number is undefined")
+    if a == 0 or b == 0:
+        raise ValueError("outside domain")
+    elif a < 0 or b < 0:
+        raise ValueError("outside domain")
     return math.log(b, a)
 
 
