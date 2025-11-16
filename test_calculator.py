@@ -17,20 +17,20 @@ class TestCalculator(unittest.TestCase):
     #     fill in code
     # ##########################
     def test_sub(self):
-        self.assertEqual(subtract(2, 1), 1)
-        self.assertEqual(subtract(2, 2), 0)
-        self.assertEqual(subtract(3, 1), 2)
+        self.assertEqual(sub(2, 1), 1)
+        self.assertEqual(sub(2, 2), 0)
+        self.assertEqual(sub(3, 1), 2)
 
     ######## Partner 1
     def test_multiply(self):
-        self.assertTrue(multiply(2, 4) == 8)
-        self.assertTrue(multiply(0, 5) == 0)
-        self.assertTrue(multiply(1, 1) == 1)
+        self.assertTrue(mul(2, 4) == 8)
+        self.assertTrue(mul(0, 5) == 0)
+        self.assertTrue(mul(1, 1) == 1)
 
     def test_divide(self):
-        self.assertTrue(divide(2, 10) == 5)
-        self.assertTrue(divide(5, 5) == 1)
-        self.assertTrue(divide(10, 5) == 0.5)
+        self.assertTrue(div(2, 10) == 5)
+        self.assertTrue(div(5, 5) == 1)
+        self.assertTrue(div(10, 5) == 0.5)
 
     # ##########################
 
@@ -41,7 +41,7 @@ class TestCalculator(unittest.TestCase):
     #     #     div(0, 5)
     #     fill in code
     def test_divide_by_zero(self):
-        self.assertRaises(ZeroDivisionError, divide, 0, 5)
+        self.assertRaises(ZeroDivisionError, div, 0, 5)
     # def test_logarithm(self): # 3 assertions
     #     fill in code
     def test_logarithm(self):
