@@ -24,8 +24,14 @@ def hypotenuse(a, b):
 def add(a, b):
     return a + b
 
+def subtract(a, b):
+    return a - b
+
 def sub(a, b):
     return a - b
+
+def multiply(a, b):
+    return a * b
 
 def mul(a, b):
     return a * b
@@ -42,6 +48,17 @@ def logarithm(a, b):
         raise ValueError("outside domain")
 
     return math.log(b, a)
+
+def log(a, b):
+    if a == 0 or b == 0:
+        raise ValueError("outside domain")
+    elif a < 0 or b < 0:
+        raise ValueError("outside domain")
+
+    return math.log(b, a)
+
+def exponent(a, b):
+    return a**b
 
 def exp(a, b):
     return a**b
