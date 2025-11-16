@@ -1,13 +1,13 @@
+# https://github.com/patsofatso/lab11-BT-JY
+# Partner 1: Brandon Tran
+# Partner 2: Jacob Young
+
 """
 calculator.py
 - Defines functions used to create a simple calculator
 
 One function per operation, in order.
 """
-
-# https://github.com/patsofatso/lab11-BT-JY
-# Partner 1: Brandon Tran
-# Partner 2: Jacob Young
 
 # First example
 import math
@@ -24,13 +24,13 @@ def hypotenuse(a, b):
 def add(a, b):
     return a + b
 
-def subtract(a, b):
+def sub(a, b):
     return a - b
 
-def multiply(a, b):
+def mul(a, b):
     return a * b
 
-def divide(a, b):
+def div(a, b):
     if a == 0:
        raise ZeroDivisionError("Division by zero")
     return b / a
@@ -43,5 +43,5 @@ def logarithm(a, b):
 
     return math.log(b, a)
 
-def exponent(a, b):
+def exp(a, b):
     return a**b
