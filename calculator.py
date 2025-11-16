@@ -22,9 +22,7 @@ def divide(a, b):
     return b / a
 
 def logarithm(a, b):
-    if a == 0:
-        raise ZeroDivisionError("log 0 is undefined")
-    elif a < 0:
+    if a <=0:
         raise ValueError("log of a negative number is undefined")
     return math.log(b, a)
 
@@ -44,9 +42,7 @@ def multiply(a, b):
     return a * b
 
 def logarithm(a, b):
-    if a == 0:
-        raise ZeroDivisionError("log 0 is undefined")
-    elif a < 0:
+    if a <= 0:
         raise ValueError("log of a negative number is undefined")
 
     return math.log(b, a)
@@ -54,3 +50,4 @@ def logarithm(a, b):
 
 def exponent(a, b):
     return a**b
+print(logarithm(0, 2))
