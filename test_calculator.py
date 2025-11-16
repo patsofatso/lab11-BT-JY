@@ -46,20 +46,20 @@ class TestCalculator(unittest.TestCase):
     #     fill in code
     def test_logarithm(self):
         self.assertEqual(logarithm(2, 2), 1)
-        self.assertEqual(logarithm(10, 1), 0)
+        self.assertEqual(log(10, 1), 0)
         self.assertEqual(logarithm(5, 1), 0)
     # def test_log_invalid_base(self): # 1 assertion
     #     # use same technique from test_divide_by_zero
     #     fill in code
     # ##########################
     def test_log_invalid_base(self):
-        self.assertRaises(ValueError, logarithm, -1, 2)
+        self.assertRaises(ValueError, log, -1, 2)
     ######## Partner 1
     def test_log_invalid_argument(self):
         with self.assertRaises(ValueError):
             logarithm(0, 5)
 
-    def test_hypotenuse(self): 
+    def test_hypotenuse(self):
         self.assertAlmostEqual(hypotenuse(-1, -1), 1.41421356237)
         self.assertTrue(hypotenuse(0, 0) == 0.0)
         self.assertAlmostEqual(hypotenuse(1, 1), 1.41421356237)
