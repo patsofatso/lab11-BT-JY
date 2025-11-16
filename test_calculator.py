@@ -10,26 +10,26 @@ class TestCalculator(unittest.TestCase):
     # def test_add(self): # 3 assertions
     #     fill in code
     def test_add(self):
-        self.assertEqual(add(1, 1), 2)
-        self.assertEqual(add(1, 2), 3)
+        self.assertEqual(add(-1, 1), 0)
+        self.assertEqual(add(-5, -10), -15)
         self.assertEqual(add(2, 2), 4)
     # def test_subtract(self): # 3 assertions
     #     fill in code
     # ##########################
     def test_sub(self):
         self.assertEqual(sub(2, 1), 1)
-        self.assertEqual(subtract(2, 2), 0)
-        self.assertEqual(sub(3, 1), 2)
+        self.assertEqual(subtract(-2, -2), 0)
+        self.assertEqual(sub(-5, 1), -6)
 
     ######## Partner 1
     def test_multiply(self):
         self.assertTrue(mul(2, 4) == 8)
         self.assertTrue(multiply(0, 5) == 0)
-        self.assertTrue(mul(1, 1) == 1)
+        self.assertTrue(mul(1, -1) == -1)
 
     def test_divide(self):
-        self.assertTrue(div(2, 10) == 5)
-        self.assertTrue(div(5, 5) == 1)
+        self.assertTrue(div(-2, 10) == -5)
+        self.assertTrue(div(5, 0) == 0)
         self.assertTrue(div(10, 5) == 0.5)
 
     # ##########################
@@ -66,7 +66,7 @@ class TestCalculator(unittest.TestCase):
 
     def test_sqrt(self):
         with self.assertRaises(ValueError):
-            square_root(-1)
+            square_root(-5)
         self.assertAlmostEqual(square_root(2), 1.41421356237)
         self.assertTrue(square_root(4) == 2)
 
