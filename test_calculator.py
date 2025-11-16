@@ -23,14 +23,14 @@ class TestCalculator(unittest.TestCase):
 
     ######## Partner 1
     def test_multiply(self):
-        self.assertTrue(mul(2, 4) == 8)
-        self.assertTrue(multiply(0, 5) == 0)
-        self.assertTrue(mul(1, -1) == -1)
+        self.assertEqual(mul(2, 4), 8)
+        self.assertEqual(multiply(0, 5), 0)
+        self.assertEqual(mul(1, -1), -1)
 
     def test_divide(self):
-        self.assertTrue(div(-2, 10) == -5)
-        self.assertTrue(div(5, 0) == 0)
-        self.assertTrue(div(10, 5) == 0.5)
+        self.assertEqual(div(-2, 10), -5)
+        self.assertEqual(div(5, 0), 0)
+        self.assertEqual(div(10, 5), 0.5)
 
     # ##########################
 
@@ -61,14 +61,14 @@ class TestCalculator(unittest.TestCase):
 
     def test_hypotenuse(self):
         self.assertAlmostEqual(hypotenuse(-1, -1), 1.41421356237)
-        self.assertTrue(hypotenuse(0, 0) == 0.0)
+        self.assertEqual(hypotenuse(0, 0), 0.0)
         self.assertAlmostEqual(hypotenuse(1, 1), 1.41421356237)
 
     def test_sqrt(self):
         with self.assertRaises(ValueError):
             square_root(-5)
         self.assertAlmostEqual(square_root(2), 1.41421356237)
-        self.assertTrue(square_root(4) == 2)
+        self.assertEqual(square_root(4), 2)
 
 # Do not touch this
 if __name__ == "__main__":
