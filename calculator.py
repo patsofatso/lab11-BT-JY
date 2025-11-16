@@ -4,6 +4,11 @@ calculator.py
 
 One function per operation, in order.
 """
+
+# https://github.com/patsofatso/lab11-BT-JY
+# Partner 1: Brandon Tran
+# Partner 2: Jacob Young
+
 # First example
 import math
 
