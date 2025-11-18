@@ -41,7 +41,8 @@ class TestCalculator(unittest.TestCase):
     #     #     div(0, 5)
     #     fill in code
     def test_divide_by_zero(self):
-        self.assertRaises(ZeroDivisionError, div, 0, 5)
+        with self.assertRaises(ZeroDivisionError):
+            div(0, 5)
     # def test_logarithm(self): # 3 assertions
     #     fill in code
     def test_logarithm(self):
@@ -53,7 +54,8 @@ class TestCalculator(unittest.TestCase):
     #     fill in code
     # ##########################
     def test_log_invalid_base(self):
-        self.assertRaises(ValueError, log, -1, 2)
+        with self.assertRaises(ValueError):
+            log(-1, 5)
     ######## Partner 1
     def test_log_invalid_argument(self):
         with self.assertRaises(ValueError):
